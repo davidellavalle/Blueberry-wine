@@ -33,13 +33,32 @@ Density
 
 ## Exploratory Analysis
 
-The data was already clean when I receved it, I just merged the 2 data sets (red and white), added an extra column where I grouped the wine quality (expressed here with values from 3 to 9) into three buckets (low - medium -high) for simplicity and finally proceed with statistical analysis and visualizations.
+The data I received was already clean, I just merged the 2 data sets (red and white), added an extra column where I grouped the wine quality (expressed here with values from 3 to 9) into three buckets (low - medium - high) for simplicity and finally proceed with statistical analysis and visualizations.
 
-**Univariate Analysis** perhaps the simplest way to visualize all the variables. I used here histograms.
-**Multivariate Analysis** allowed me to analyse multiple variables and their relationship at once. This analysis showed me that there were patterns and relationship among the physicochemical attributes of the wine sample. This insights were really helpful during the modeling process to reduce the number of feature which were not having a high impact on the results I was looking for. I used here a heatmap depicting the correlation coefficient between each pair of features in the dataset.
+**Univariate Analysis** perhaps the simplest way to visualize all the variables. I used here histograms.  
+**Multivariate Analysis** allowed me to analyse multiple variables and their relationship at once. This analysis showed me that there were patterns and relationship among the physicochemical attributes of the wine sample. This insights were really helpful during the modeling process to reduce the number of feature which were not having a high impact on the results I was looking for. I used here a heatmap depicting the correlation coefficient between each pair of features in the dataset.  
 Several other plots were used to discover more patterns and the relationship between the variables. (Boxplot - jointplot - scatterplot)
 
 ### Conclusions
+
+Total number of **red** wine data: 1599
+Wines with rating 8 and above: 18
+Wines with rating less than 5: 744
+Wines with rating 5 to 7: 837
+Percentage of wines with quality 7 and above: 1.13%
+
+Total number of **white** wine data: 4898
+Wines with rating 8 and above: 180
+Wines with rating less than 5: 1640
+Wines with rating 5 to 7: 3078
+Percentage of wines with quality 7 and above: 3.05%
+
+There is an high correlation between **alcohol** and overall wine **quality**: The more alcoholic the better the wine, a higher percent generally receive better ratings by the consumers.
+The **mean quality** of red wine is less than that of white wine.
+Wine with 'Low level' of **acidity** receives a higher average rating from consumers.
+**Sulphates** play a more important role with red wines rather than whites. While in whites Suplhates concentration is below 0.5 throughout all quality labels, red wines show that an higher quantity improves quality. High quality wines anyway don't usually pass the 0.8 threshold.
+The optimal level of **pH** is to be found between 3.2 and 3.4 for both type of wines.
+There is a fundamental difference between the concentration of **Total sulfur dioxide** between whites (higher) and reds (lower).
 
 ## Modelling  
 
