@@ -1,6 +1,15 @@
-# Blueberry-wine
+# Blueberry-wine  
 
+## Introduction
 
+This project starts after the contact of BlueBerry Winery, a start-up wine maker in Portuguese region of Vinho Verde, that is trying to enter the wine business with a good amount of analytics and research on domain knowledge.  
+The company provided me with 3 datasets, all details are provided in the below section.  
+Through Data Mining techniques the aim is to extract high-level knowledge from this raw data. There are several algorithms, each one with its own advantages. Here.....(type of data, model).............. was used to determine .................  
+The goal of this physicochemical analysis is to provide the company with useful insights on wine composition and the quality perceived by the consumers in order to:  
+* pick the right grapes  
+* improve the production process
+* gain a significant advantage on the competition
+* target marketing (consumers preferences of niche and/or profitable markets) 
 
 ## Data description
 
@@ -20,4 +29,19 @@ Density
 * Alcohol - wine is an alcoholic beverage and its percentage of alcohol can vary from wine to wine. This variable is expressed in % vol.
 * Quality - score between 0 and 10
 
-##
+[Wine sales data](https://github.com/davidellavalle/Blueberry-wine/tree/main/Data)
+
+## Exploratory Analysis
+
+The data was already clean when I receved it, I just merged the 2 data sets (red and white), added an extra column where I grouped the wine quality (expressed here with values from 3 to 9) into three buckets (low - medium -high) for simplicity and finally proceed with statistical analysis and visualizations.
+
+**Univariate Analysis** perhaps the simplest way to visualize all the variables. I used here histograms.
+**Multivariate Analysis** allowed me to analyse multiple variables and their relationship at once. This analysis showed me that there were patterns and relationship among the physicochemical attributes of the wine sample. This insights were really helpful during the modeling process to reduce the number of feature which were not having a high impact on the results I was looking for. I used here a heatmap depicting the correlation coefficient between each pair of features in the dataset.
+Several other plots were used to discover more patterns and the relationship between the variables. (Boxplot - jointplot - scatterplot)
+
+### Conclusions
+
+## Modelling  
+
+When applying a Data Mining method, the selection of the variables and models are a critical issue. The selection of variable is infact useful to discard irrelevant inputs and leads to simpler models that are easier to interpret and that usually give better performances.  
+Complex models may overfit the data, losing the capability to generalize, while a model that is too simple will present limited learning capabilities.
