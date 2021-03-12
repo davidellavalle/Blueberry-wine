@@ -13,7 +13,7 @@ The goal of this physicochemical analysis is to provide the company with useful 
 
 ## Data description
 
-[Wine Quality dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality) is public available for research in the University of California, Irvine Machine Learning repository created by Paulo Cortez (Univ. Minho), Antonio Cerdeira, Fernando Almeida, Telmo Matos and Jose Reis (CVRVV) in 2009. This repository has two datasets of red and white wine samples which consists of inputs includes objective tests (e.g. PH values) and the output is based on sensory data (median of at least 3 evaluations made by wine experts). Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). There are 1599 samples of red wine and 4898 samples of white wine in the data sets. Each wine sample (row) has the following characteristics (columns):
+[Wine Quality dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality) is public available for research in the University of California, Irvine Machine Learning repository created by Paulo Cortez (Univ. Minho), Antonio Cerdeira, Fernando Almeida, Telmo Matos and Jose Reis (CVRVV) in 2009. This repository has [two datasets](https://github.com/davidellavalle/Blueberry-wine/tree/main/Data) of red and white wine samples which consists of inputs includes objective tests (e.g. PH values) and the output is based on sensory data (median of at least 3 evaluations made by wine experts). Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). There are 1599 samples of red wine and 4898 samples of white wine in the data sets. Each wine sample (row) has the following characteristics (columns):
 
 * Wine type - Red and White. 
 * Fixed acidity - acids are major wine properties and contribute greatly to the wine’s taste. Usually, the total acidity is divided into two groups: the volatile acids and the nonvolatile or fixed acids. Among the fixed acids that can be found in wines are the following: tartaric, malic, citric, and succinic. This variable is expressed in g(tartaricacid)/dm3 in the data sets.
@@ -31,16 +31,16 @@ Density
 
 [Wine sales data](https://github.com/davidellavalle/Blueberry-wine/tree/main/Data)
 
-* Country- country of wine production
-* Province - region of wine production
-* Description - review provided by wine experts
-* Designation - Winery producing the type of wine
-* Points - rating given by the expert
-* Price - selling price
-* variety - grape sort
-* winery - Winery producing the type of wine
+* Country- country of wine production.
+* Province - region of wine production.
+* Description - review provided by wine experts.
+* Designation - Winery producing the type of wine.
+* Points - rating given by the expert.
+* Price - wine selling price.
+* variety - grape sort.
+* winery - Winery producing the type of wine.
 
-## Exploratory Analysis
+## [Exploratory Analysis](https://github.com/davidellavalle/Blueberry-wine/blob/main/Exploratory%20analysis.ipynb)
 
 The data I received was already clean, datatypes were consistent and there were no missing values. I merged the 2 data sets (red and white), added an extra column where I grouped the wine quality (expressed here with values from 3 to 9) into three buckets (low - medium - high) for simplicity and finally proceed with statistical analysis and visualizations.
 
@@ -69,7 +69,7 @@ Wine with 'Low level' of **acidity** (≃ 0.4) receives a higher average rating 
 The optimal level of **pH** is to be found between 3.2 and 3.4 for both type of wines.
 There is a fundamental difference between the concentration of **Total sulfur dioxide** between whites (higher) and reds (lower).
 
-## Modelling  
+## [Modelling](https://github.com/davidellavalle/Blueberry-wine/tree/main/Modelling)  
 
 I used here a *Supervised learning* type of machine learning since the data at my disposal was composed by measured features and had labels associated to it.  
 My goal was to train a model that could in future be used to apply the same labels to new, unknown data.  
@@ -86,7 +86,7 @@ Step by step
 * Selection of the variables. The selection of variable is infact useful to discard irrelevant inputs and leads to simpler models that are easier to interpret and that usually give better performances.  
 Complex models may overfit the data, losing the capability to generalize, while a model that is too simple will present limited learning capabilities.
 * Fitting the model and prediction of the results.
-* Accuracy check - *0.69*
+* Accuracy check 
 * Confusion Matrix - table allowing visualization of the performance of an algorithm
 * Classification report
 The precision is the ratio tp / (tp + fp) where tp is the number of true positives and fp the number of false positives. The precision is intuitively the ability of the classifier to not label a sample as positive if it is negative.
@@ -95,3 +95,6 @@ The F-beta score can be interpreted as a weighted harmonic mean of the precision
 The support is the number of occurrences of each class in y_test.
 * Cross Validation as a resample procedure used to evaluate the machine learning model on a limited data sample. Called as well k-fold cross validation due to the single parameter called k (here cv) that refers to the number of groups that a given data sample is to be split into.
 
+### Plots
+
+Several Visualization are available in this [folder](https://github.com/davidellavalle/Blueberry-wine/tree/main/Plots%20-%20exploratory%20analysis)
