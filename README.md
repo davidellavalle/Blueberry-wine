@@ -33,7 +33,7 @@ Density
 
 ## Exploratory Analysis
 
-The data I received was already clean, I just merged the 2 data sets (red and white), added an extra column where I grouped the wine quality (expressed here with values from 3 to 9) into three buckets (low - medium - high) for simplicity and finally proceed with statistical analysis and visualizations.
+The data I received was already clean, datatypes were consistent and there were no missing values. I merged the 2 data sets (red and white), added an extra column where I grouped the wine quality (expressed here with values from 3 to 9) into three buckets (low - medium - high) for simplicity and finally proceed with statistical analysis and visualizations.
 
 **Univariate Analysis** perhaps the simplest way to visualize all the variables. I used here histograms.  
 **Multivariate Analysis** allowed me to analyse multiple variables and their relationship at once. This analysis showed me that there were patterns and relationship among the physicochemical attributes of the wine sample. This insights were really helpful during the modeling process to reduce the number of feature which were not having a high impact on the results I was looking for. I used here a heatmap depicting the correlation coefficient between each pair of features in the dataset.  
@@ -55,12 +55,32 @@ Percentage of wines with quality 7 and above: 3.05%
 
 There is an high correlation between **alcohol** and overall wine **quality**: The more alcoholic the better the wine, a higher percent generally receive better ratings by the consumers.
 The **mean quality** of red wine is less than that of white wine.
-Wine with 'Low level' of **acidity** receives a higher average rating from consumers.
+Wine with 'Low level' of **acidity** (≃ 0.4) receives a higher average rating from consumers.
 **Sulphates** play a more important role with red wines rather than whites. While in whites Suplhates concentration is below 0.5 throughout all quality labels, red wines show that an higher quantity improves quality. High quality wines anyway don't usually pass the 0.8 threshold.
 The optimal level of **pH** is to be found between 3.2 and 3.4 for both type of wines.
 There is a fundamental difference between the concentration of **Total sulfur dioxide** between whites (higher) and reds (lower).
 
 ## Modelling  
 
-When applying a Data Mining method, the selection of the variables and models are a critical issue. The selection of variable is infact useful to discard irrelevant inputs and leads to simpler models that are easier to interpret and that usually give better performances.  
+I'll use here a *Supervised learning* type of machine learning since the data at my disposal is composed by measured features and has labels associated to it.  
+My goal is to train a model that can in future be used to apply the same labels to new, unknown data. For this purpose I'll use the classification concept which basically categorizes a set of data into classes. The labels I'll be using are quality labels (low - medium - high) or wine type (red - white).   
+
+I used 3 different machine learning models:
+* **Logistic Regression** to find the best-fitting relationship between the dependent variable (the discrete value I mentioned before) and the set of independent variables.  
+* **Knn** K Nearest Neighbour, a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure.
+* **Decision Tree** where the data is continuously split according to a certain parameter. The tree can be explained by two entities, namely decision nodes and leaves: the leaves are the decisions or the final outcomes and the decision nodes are where the data is split.
+
+Step by step
+
+* Selection of the variables. The selection of variable is infact useful to discard irrelevant inputs and leads to simpler models that are easier to interpret and that usually give better performances.  
 Complex models may overfit the data, losing the capability to generalize, while a model that is too simple will present limited learning capabilities.
+* Fitting the model and prediction of the results.
+* Accuracy check - *0.69*
+* Confusion Matrix - table allowing visualization of the performance of an algorithm
+* Classification report
+The precision is the ratio tp / (tp + fp) where tp is the number of true positives and fp the number of false positives. The precision is intuitively the ability of the classifier to not label a sample as positive if it is negative.
+The recall is the ratio tp / (tp + fn) where tp is the number of true positives and fn the number of false negatives. The recall is intuitively the ability of the classifier to find all the positive samples.
+The F-beta score can be interpreted as a weighted harmonic mean of the precision and recall, where an F-beta score reaches its best value at 1 and worst score at 0. The F-beta score weights the recall more than the precision by a factor of beta. beta = 1.0 means recall and precision are equally important.
+The support is the number of occurrences of each class in y_test.
+* Cross Validation as a resample procedure used to evaluate the machine learning model on a limited data sample. Called as well k-fold cross validation due to the single parameter called k (here cv) that refers to the number of groups that a given data sample is to be split into.
+
