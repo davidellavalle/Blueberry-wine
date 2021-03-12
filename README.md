@@ -62,13 +62,15 @@ There is a fundamental difference between the concentration of **Total sulfur di
 
 ## Modelling  
 
-I'll use here a *Supervised learning* type of machine learning since the data at my disposal is composed by measured features and has labels associated to it.  
-My goal is to train a model that can in future be used to apply the same labels to new, unknown data. For this purpose I'll use the classification concept which basically categorizes a set of data into classes. The labels I'll be using are quality labels (low - medium - high) or wine type (red - white).   
+I used here a *Supervised learning* type of machine learning since the data at my disposal was composed by measured features and had labels associated to it.  
+My goal was to train a model that could in future be used to apply the same labels to new, unknown data.  
+For this purpose I used the *classification* concept which basically categorizes a set of data into classes. The labels I are quality labels (low - medium - high) or wine type (red - white).   
 
-I used 3 different machine learning models:
+Machine learning models:
 * **Logistic Regression** to find the best-fitting relationship between the dependent variable (the discrete value I mentioned before) and the set of independent variables.  
 * **Knn** K Nearest Neighbour, a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure.
 * **Decision Tree** where the data is continuously split according to a certain parameter. The tree can be explained by two entities, namely decision nodes and leaves: the leaves are the decisions or the final outcomes and the decision nodes are where the data is split.
+* **Random Forest** conctruction of a multitude of decision trees at training time and output the class that is the mode of the classification.
 
 Step by step
 
