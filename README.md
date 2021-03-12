@@ -31,6 +31,15 @@ Density
 
 [Wine sales data](https://github.com/davidellavalle/Blueberry-wine/tree/main/Data)
 
+* Country- country of wine production
+* Province - region of wine production
+* Description - review provided by wine experts
+* Designation - Winery producing the type of wine
+* Points - rating given by the expert
+* Price - selling price
+* variety - grape sort
+* winery - Winery producing the type of wine
+
 ## Exploratory Analysis
 
 The data I received was already clean, datatypes were consistent and there were no missing values. I merged the 2 data sets (red and white), added an extra column where I grouped the wine quality (expressed here with values from 3 to 9) into three buckets (low - medium - high) for simplicity and finally proceed with statistical analysis and visualizations.
