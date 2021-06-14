@@ -51,13 +51,13 @@ Several other plots were used to discover more patterns and the relationship bet
 ### Conclusions
 
 Total number of **red** wine data: 1599  
-Wines with rating 8 and above: 18  
+Wines with rating 7 and above: 18  
 Wines with rating less than 5: 744  
 Wines with rating 5 to 7: 837  
 Percentage of wines with quality 7 and above: 1.13%  
 
 Total number of **white** wine data: 4898  
-Wines with rating 8 and above: 180  
+Wines with rating 7 and above: 180  
 Wines with rating less than 5: 1640  
 Wines with rating 5 to 7: 3078  
 Percentage of wines with quality 7 and above: 3.05%  
