@@ -50,24 +50,24 @@ Several other plots were used to discover more patterns and the relationship bet
 
 ### Conclusions
 
-Total number of **red** wine data: 1599
-Wines with rating 8 and above: 18
-Wines with rating less than 5: 744
-Wines with rating 5 to 7: 837
-Percentage of wines with quality 7 and above: 1.13%
+Total number of **red** wine data: 1599  
+Wines with rating 8 and above: 18  
+Wines with rating less than 5: 744  
+Wines with rating 5 to 7: 837  
+Percentage of wines with quality 7 and above: 1.13%  
 
-Total number of **white** wine data: 4898
-Wines with rating 8 and above: 180
-Wines with rating less than 5: 1640
-Wines with rating 5 to 7: 3078
-Percentage of wines with quality 7 and above: 3.05%
+Total number of **white** wine data: 4898  
+Wines with rating 8 and above: 180  
+Wines with rating less than 5: 1640  
+Wines with rating 5 to 7: 3078  
+Percentage of wines with quality 7 and above: 3.05%  
 
-There is an high correlation between **alcohol** and overall wine **quality**: The more alcoholic the better the wine, a higher percent generally receive better ratings by the consumers.
-The **mean quality** of red wine is less than that of white wine.
-Wine with 'Low level' of **acidity** (≃ 0.4) receives a higher average rating from consumers.
-**Sulphates** play a more important role with red wines rather than whites. While in whites Suplhates concentration is below 0.5 throughout all quality labels, red wines show that an higher quantity improves quality. High quality wines anyway don't usually pass the 0.8 threshold.
-The optimal level of **pH** is to be found between 3.2 and 3.4 for both type of wines.
-There is a fundamental difference between the concentration of **Total sulfur dioxide** between whites (higher) and reds (lower).
+There is an high correlation between **alcohol** and overall wine **quality**: The more alcoholic the better the wine, a higher percent generally receive better ratings by the consumers.  
+The **mean quality** of red wine is less than that of white wine.  
+Wine with 'Low level' of **acidity** (≃ 0.4) receives a higher average rating from consumers.  
+**Sulphates** play a more important role with red wines rather than whites. While in whites Suplhates concentration is below 0.5 throughout all quality labels, red wines show that an higher quantity improves quality. High quality wines anyway don't usually pass the 0.8 threshold.  
+The optimal level of **pH** is to be found between 3.2 and 3.4 for both type of wines.  
+There is a fundamental difference between the concentration of **Total sulfur dioxide** between whites (higher) and reds (lower).  
 
 ## [Modelling](https://github.com/davidellavalle/Blueberry-wine/tree/main/Modelling)  
 
