@@ -4,7 +4,7 @@
 
 This project starts after the contact of BlueBerry Winery, a start-up wine maker in Portuguese region of Vinho Verde, that is trying to enter the wine business with a good amount of analytics and research on domain knowledge.  
 The company provided me with 3 datasets, all details are provided in the below section.  
-Through Data Mining techniques the aim is to extract high-level knowledge from this raw data. There are several algorithms, each one with its own advantages. Here.....(type of data, model).............. was used to determine .................  
+Through Data Mining techniques the aim is to extract high-level knowledge from this raw data. There are several algorithms, each one with its own advantages. 
 The goal of this physicochemical analysis is to provide the company with useful insights on wine composition and the quality perceived by the consumers in order to:  
 * pick the right grapes  
 * improve the production process
